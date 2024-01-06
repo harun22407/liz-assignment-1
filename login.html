@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+
+<body>
+
+    <!-- Header -->
+    <div id="header"></div>
+
+
+
+    <!-- Main Part Start-->
+    <main>
+
+        <div class="container-fluid text-center" style="background-color: #b5ede0;">
+            <h3 class="my-3 p-3">Login</h3>
+            <form>
+                <div class="row justify-content-center text-start fw-bold">
+                    <div class="col-lg-6 col-md-6 col-sm-8">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control border border-info border-5 rounded-3"
+                                id="exampleFormControlInput1" placeholder="name@example.com" required>
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control border border-info border-5 rounded-3"
+                                id="exampleInputPassword1" placeholder="Enter your password" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                        </div>
+                        <div class="d-grid mb-3">
+                            <button class="btn btn-dark border border-info border-5 rounded-3" id="adminLogin"
+                                style="color: #00ffc3" type="submit">Login</button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+
+
+    </main>
+    <!-- Main Part End -->
+
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+
+
+
+    <!-- Script Part -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <script>
+        $(function () {
+            $('#header').load('/common/header.html')
+            $('#footer').load('/common/footer.html')
+        })
+    </script>
+
+    <script src="login.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
